@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Цветочный магазин</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Цветочный Мир</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="about/about.html">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Доставляем свежие цветы прямо к вам</h2>
+        <p>Порадуйте себя и близких красивыми букетами</p>
+        <a href="#" class="btn" id="order-now-btn"
+          >Хочу заказать прямо сейчас!</a
+        >
+      </div>
+    </section>
+
+    <section class="popular-categories">
+      <h2>Популярные категории</h2>
+      <div class="categories">
+        <div class="category">
+          <img src="img/roses.jpg" alt="Розы" />
+          <h3>Розы</h3>
+        </div>
+        <div class="category">
+          <img src="img/bouquets.jpg" alt="Букеты" />
+          <h3>Букеты</h3>
+        </div>
+        <div class="category">
+          <img src="img/plants.jpg" alt="Растения" />
+          <h3>Комнатные растения</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Форма для заказа (скрыта по умолчанию) -->
+    <div class="order-form-container" id="order-form-container">
+      <div class="order-form">
+        <h3>Оформление заказа</h3>
+        <form action="#" netlify>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="address">Адрес доставки:</label>
+          <input type="text" id="address" name="address" required />
+
+          <label for="order-details">Детали заказа:</label>
+          <textarea id="order-details" name="order-details" rows="4"></textarea>
+
+          <button type="submit" class="btn">Отправить заказ</button>
+        </form>
+        <br />
+        <button id="close-form" class="close-btn">Закрыть</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Цветочный Мир. Все права защищены.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
